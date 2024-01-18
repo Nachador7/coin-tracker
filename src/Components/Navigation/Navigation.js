@@ -1,19 +1,24 @@
+import { FaTwitter, FaDiscord } from 'react-icons/fa';
+
 import './Navigation.css';
 
 const Navigation = () => {
     return (
         
         <nav className="navigation">
-            <div className='logo'>
-                LOGO
+            <div className='f3'>
+               COINHARBOR
             </div>
-        <ul>
-            <li>HOME</li>
+        <ul className='mr5'>
+            <li>Home</li>
             <li>Market</li>
             <li>Choose Us</li>
-            <li>JOIN US</li>
+            <li>Join</li>
         </ul>
-        <div>discord</div>
+        <div>
+            <FaTwitter className='twitter f3 mr3' />
+            <FaDiscord className='discord f3' />
+        </div>
     </nav>
     )
 

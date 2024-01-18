@@ -26,16 +26,16 @@ h1 {
 .coin-container {
 align-items: center;
 display: flex;
-height: 21rem;
 justify-content: space-between;
 margin: 3rem auto 0;
 max-width: 100rem;
 padding: 0 1rem;
 text-align: center;
+cursor: pointer;
 }
 .home-container
 {
-    margin-top: 500px;
+    margin-top: 330px;
 }
 
 .price-increase {

@@ -10,7 +10,7 @@ const Market = () => {
             <h2>Market</h2>
             {data ? (
                 data.slice(0, 3).map((coin) => (
-                    <div key={coin.id} className="coin-row">
+                    <div key={coin.id} className="ctc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5">
                         <h3>{coin.name}</h3>
                         <p>Current Price: ${coin.current_price}</p>
                         <p>Market Cap: ${coin.market_cap}</p>

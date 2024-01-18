@@ -9,17 +9,18 @@ const Home = () => {
         <div className="Home">
             <div className='home-container'>
             <h1>
-              TRACK YOUR <br></br>
+              TRACK YOUR 
              <div className='cryptocurrencies'> 
              CYPTOCURRENCIES
              </div> 
             </h1>
             <div className='coin-container'>
             {data ? (
-                data.slice(0, 3).map((coin) => (
-                    <div key={coin.id} className="coin-row">
-                        <h3>{coin.name} <span className={coin.price_change_percentage_24h < 0 ? 'price-decrease' : 'price-increase'}>{coin.price_change_percentage_24h.toFixed(2)}%</span></h3>
-                        <p>Current Price: ${coin.current_price}</p>
+                data.slice(0, 4).map((coin) => (
+                    <div key={coin.id} className="ctc grow br3 pa3 ma3 dib bw2 shadow-5">
+                        <img src={coin.image} alt={coin.name} className="w4 h4 mb3" />
+                        <h3 className='white mb1'>{coin.name} <span className={coin.price_change_percentage_24h < 0 ? 'price-decrease' : 'price-increase'}>{coin.price_change_percentage_24h.toFixed(2)}%</span></h3>
+                        <p className='white'>Current Price: ${coin.current_price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</p>
                     </div>
                 ))
             ) : (
