@@ -15,7 +15,7 @@ const Navigation = () => {
             <li>Choose Us</li>
             <li>Join</li>
         </ul>
-        <div>
+        <div className='social-media'>
             <FaTwitter className='twitter f3 mr3' />
             <FaDiscord className='discord f3' />
         </div>

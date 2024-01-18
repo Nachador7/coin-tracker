@@ -1,5 +1,7 @@
 import React from 'react';
 import Fetchdata from '../Fetchdata/Fetchdata';
+import { Circles } from 'react-loader-spinner';
+
 import './Market.css';
 
 const Market = () => {
@@ -16,8 +18,17 @@ const Market = () => {
                         <p>Market Cap: ${coin.market_cap}</p>
                     </div>
                 ))
-            ) : (
-                <p>Loading...</p>
+            ) : ( <div className='spinner'>
+                <Circles
+                height="80"
+                width="80"
+                color="purple"
+                ariaLabel="circles-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+                />
+                </div>
             )}
         </div>
     );

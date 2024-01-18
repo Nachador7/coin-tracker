@@ -11,6 +11,9 @@ const FetchData = () => {
             })
             .catch(error => {
                 console.error('Error fetching data: ', error);
+                setTimeout(() => {
+                    alert('We are having trouble fetching data. Please try again later.');
+                }, 10000);
             });
     }, []);
 

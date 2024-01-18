@@ -1,5 +1,6 @@
 import Fetchdata from '../Fetchdata/Fetchdata';
 import './Home.css'
+import { Circles } from 'react-loader-spinner';
 
 const Home = () => {
 
@@ -23,8 +24,17 @@ const Home = () => {
                         <p className='white'>Current Price: ${coin.current_price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</p>
                     </div>
                 ))
-            ) : (
-                <p>Loading...</p>
+            ) : ( <div className=''>
+                <Circles
+                height="80"
+                width="80"
+                color="purple"
+                ariaLabel="circles-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+                />
+                </div>
             )}
             </div>
             </div>

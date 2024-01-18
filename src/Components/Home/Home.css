@@ -45,3 +45,6 @@ cursor: pointer;
 .price-decrease {
     color: red;
 }
+.spinner {
+    padding:0 23rem;
+}

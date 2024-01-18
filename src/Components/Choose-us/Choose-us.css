@@ -1,0 +1,10 @@
+.choose-us {
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #0f051d;
+font: 2.5rem;
+color: white;
+}

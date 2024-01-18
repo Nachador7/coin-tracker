@@ -1,6 +1,7 @@
 import Home from "./Components/Home/Home";
 import Navigation from "./Components/Navigation/Navigation";
 import Market from "./Components/Market/Market";
+import ChooseUs from "./Components/Choose-us/Choose-us";
 
 function App() {
   return (
@@ -8,9 +9,7 @@ function App() {
       <Navigation />
      <Home />
       <Market />
-      <h2>
-        Choose Us
-      </h2>
+      <ChooseUs />
       <h2>
         JOIN US
       </h2>
