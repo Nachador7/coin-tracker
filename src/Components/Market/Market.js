@@ -8,26 +8,39 @@ const Market = () => {
     const data = Fetchdata();
 
     return (
-        <div className='market'>
+        <div className='market w-100'>
             <h2>Market</h2>
             {data ? (
-                data.slice(0, 3).map((coin) => (
-                    <div key={coin.id} className="ctc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5">
-                        <h3>{coin.name}</h3>
-                        <p>Current Price: ${coin.current_price}</p>
-                        <p>Market Cap: ${coin.market_cap}</p>
-                    </div>
-                ))
-            ) : ( <div className='spinner'>
-                <Circles
-                height="80"
-                width="80"
-                color="purple"
-                ariaLabel="circles-loading"
-                wrapperStyle={{}}
-                wrapperClass=""
-                visible={true}
-                />
+                <div className="overflow-auto">
+                   <table className='f4 w-100 mw-100 center mr4' cellspacing='0'>
+    <thead>
+        <tr className='stripe-dark'>
+            <th className='fw6 tl pa3 ' style={{ paddingLeft: '137px' }}>Coin</th>
+            <th className='fw6 tl pa3'>Price</th>
+            <th className='fw6 tl pa3'>24h Change</th>
+            <th className='fw6 tl pa3'>Market Cap</th>
+        </tr>
+    </thead>
+    <tbody className='lh-copy'>
+        {data.slice(0, 10).map((coin, index) => (
+            <tr className={index % 2 === 0 ? 'stripe-dark' : ''} key={index}>
+                <td className='pa3 pl6'><img src={coin.image} alt={coin.name} className='h3 w3 dib mr4 v-mid' />{coin.name}</td>
+                <td className='pa3'>${coin.current_price}</td>
+                <td className='pa3'>{coin.price_change_percentage_24h.toFixed(2)}%</td>
+                <td className='pa3'>${coin.market_cap.toLocaleString()}</td>
+            </tr>
+        ))}
+    </tbody>
+</table>
+                </div>
+            ) : (
+                <div className='spinner'>
+                    <Circles
+                        height="80"
+                        width="80"
+                        color="purple"
+                        ariaLabel="circles-loading"
+                    />
                 </div>
             )}
         </div>

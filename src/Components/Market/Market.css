@@ -1,23 +1,12 @@
 .market {
     width: 100vw; /* Full width */
     height: 100vh; /* Full height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(233, 157, 157);
+    background-color: #0f051d;
     font: 2.5rem;
+    color:white;
+    
+}
+.tl 
+    { text-align: left; 
 }
 
-.coin-row {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
