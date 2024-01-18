@@ -1,4 +1,4 @@
-.Navigation {
+.navigation {
     position: fixed;
     top: 0;
     width: 100%;
@@ -6,15 +6,18 @@
     background-color: black;
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.Navigation ul {
+.navigation ul {
     list-style-type: none;
     display: flex;
 } 
 
-.Navigation li {
+.navigation li {
     margin: 0 10px;
+}
+.navigation div {
+    margin: 0 25px;
 }

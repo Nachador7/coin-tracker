@@ -1,16 +1,18 @@
 import Home from "./Components/Home/Home";
 import Navigation from "./Components/Navigation/Navigation";
+import Market from "./Components/Market/Market";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
      <Home />
+      <Market />
       <h2>
-        Market
+        Choose Us
       </h2>
       <h2>
-        Join-Us
+        JOIN US
       </h2>
 
     </div>

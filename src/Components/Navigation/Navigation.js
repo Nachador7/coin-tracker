@@ -2,13 +2,18 @@ import './Navigation.css';
 
 const Navigation = () => {
     return (
-        <nav className="Navigation">
-            {/* <div className='logo'>Logo</div> */}
+        
+        <nav className="navigation">
+            <div className='logo'>
+                LOGO
+            </div>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li>HOME</li>
+            <li>Market</li>
+            <li>Choose Us</li>
+            <li>JOIN US</li>
         </ul>
+        <div>discord</div>
     </nav>
     )
 
