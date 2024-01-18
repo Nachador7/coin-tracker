@@ -1,0 +1,20 @@
+.Navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Navigation ul {
+    list-style-type: none;
+    display: flex;
+} 
+
+.Navigation li {
+    margin: 0 10px;
+}
