@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className="Home">
             <div className='home-container'>
-            <h1>
+            <h1 className='h1-container'>
               TRACK YOUR 
              <div className='cryptocurrencies'> 
              CYPTOCURRENCIES

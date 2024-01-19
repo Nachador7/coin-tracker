@@ -6,7 +6,7 @@
     align-items: center;
     background-image: linear-gradient(0deg,#0f051d 30%,#130749 70%);
     }
-h1 {
+.h1-container {
     font-size: 5rem;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -33,10 +33,10 @@ padding: 0 1rem;
 text-align: center;
 cursor: pointer;
 }
-.home-container
+/* .home-container
 {
     margin-top: 310px;
-}
+} */
 
 .price-increase {
     color: green;
