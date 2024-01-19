@@ -8,7 +8,7 @@ const Market = () => {
     const data = Fetchdata();
 
     return (
-        <div className='market w-100'>
+        <div className='market w-100 pl6'>
             <h2>Market</h2>
             {data ? (
                 <div className="overflow-auto">
@@ -22,9 +22,9 @@ const Market = () => {
         </tr>
     </thead>
     <tbody className='lh-copy'>
-        {data.slice(0, 10).map((coin, index) => (
+        {data.slice(0, 30).map((coin, index) => (
             <tr className={index % 2 === 0 ? 'stripe-dark' : ''} key={index}>
-                <td className='pa3 pl6'><img src={coin.image} alt={coin.name} className='h3 w3 dib mr4 v-mid' />{coin.name}</td>
+                <td className='pa3'><img src={coin.image} alt={coin.name} className='h3 w3 dib mr4 v-mid' />{coin.name}</td>
                 <td className='pa3'>${coin.current_price}</td>
                 <td className='pa3'>{coin.price_change_percentage_24h.toFixed(2)}%</td>
                 <td className='pa3'>${coin.market_cap.toLocaleString()}</td>
@@ -44,6 +44,7 @@ const Market = () => {
                 </div>
             )}
         </div>
+        
     );
 }
 
