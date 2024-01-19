@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import Modal from 'react-modal';
 import Home from "./Components/Home/Home";
 import Navigation from "./Components/Navigation/Navigation";
 import Market from "./Components/Market/Market";
@@ -6,6 +8,10 @@ import JoinUs from "./Components/Join-us/Join-us";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
+  useEffect(() => {
+    Modal.setAppElement('#root');
+  }, []);
+
   return (
     <div className="App">
       <Navigation />
