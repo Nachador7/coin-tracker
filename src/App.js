@@ -3,6 +3,7 @@ import Navigation from "./Components/Navigation/Navigation";
 import Market from "./Components/Market/Market";
 import ChooseUs from "./Components/Choose-us/Choose-us";
 import JoinUs from "./Components/Join-us/Join-us";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Market />
       <ChooseUs />
       <JoinUs />
+      <Footer />
 
     </div>
   );
