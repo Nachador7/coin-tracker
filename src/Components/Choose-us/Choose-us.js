@@ -18,25 +18,45 @@ const ChooseUs = () => {
                                     <p>Fastest way to buy and sell cryptocurrencies</p>
                                 </div>
                             </div>
-                            <div className='tc grow bg-light-green br3 pa3 ma2 bw2 shadow-5'>
-                                trolololo
+                            <div className='choose-box'>
+                                <i><IoIosThunderstorm /></i>
+                                <div className='choose-box-content'>
+                                    <h4>Fast</h4> 
+                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                </div>
                             </div>
-                            <div className='tc grow bg-light-green br3 pa3 ma2 bw2 shadow-5'>
-                                trolololo
+                            <div className='choose-box'>
+                                <i><IoIosThunderstorm /></i>
+                                <div className='choose-box-content'>
+                                    <h4>Fast</h4> 
+                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                </div>
                             </div>
                         </div>
                         <div className='choose-container-content2'>
                             <img src={hand} alt='hand' />
                         </div>
                         <div className='choose-container-content3'>
-                            <div className='custom-color br3 pa3 ma2 bw2'>
-                                trolololo
+                        <div className='choose-box'>
+                                <i><IoIosThunderstorm /></i>
+                                <div className='choose-box-content'>
+                                    <h4>Fast</h4> 
+                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                </div>
                             </div>
-                            <div className='tc grow bg-light-green br3 pa3 ma2 bw2 shadow-5'>
-                                trolololo
+                            <div className='choose-box'>
+                                <i><IoIosThunderstorm /></i>
+                                <div className='choose-box-content'>
+                                    <h4>Fast</h4> 
+                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                </div>
                             </div>
-                            <div className='tc grow bg-light-green br3 pa3 ma2 bw2 shadow-5'>
-                                trolololo
+                            <div className='choose-box'>
+                                <i><IoIosThunderstorm /></i>
+                                <div className='choose-box-content'>
+                                    <h4>Fast</h4> 
+                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                </div>
                             </div>
                         </div>
                     </div>
