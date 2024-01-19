@@ -10,7 +10,25 @@
     font: 2.5rem;
     color:white;
 }
+.thead-border {
+    border: 1px solid #fff;
+}
 .tl 
     { text-align: left; 
 }
 
+.overflow-auto::-webkit-scrollbar {
+    width: 8px;
+}
+
+.overflow-auto::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
