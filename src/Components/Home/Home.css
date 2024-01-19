@@ -1,6 +1,6 @@
 .Home {
     width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
+    height: 105vh; /* Full height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@ cursor: pointer;
 }
 .home-container
 {
-    margin-top: 330px;
+    margin-top: 310px;
 }
 
 .price-increase {

@@ -10,9 +10,34 @@
     font: 2.5rem;
     color:white;
 }
-.thead-border {
-    border: 1px solid #fff;
+h2 {
+    font-size: 3.5rem;
 }
+
+.hover-input:hover {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.sticky-thead {
+    position: sticky;
+    top: 0;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    z-index: 10;
+}
+
+.sticky-thead th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sticky-thead th:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
 .tl 
     { text-align: left; 
 }
@@ -27,6 +52,7 @@
 
 .overflow-auto::-webkit-scrollbar-thumb {
     background: #fff;
+    border-radius: 10px;
 }
 
 .overflow-auto::-webkit-scrollbar-thumb:hover {
