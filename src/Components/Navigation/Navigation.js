@@ -9,7 +9,7 @@ const Navigation = () => {
             <div className='f2'>
                COINHARBOR
             </div>
-        <ul className='mr5 f4'>
+        <ul className='mr6 f4'>
             <li>Home</li>
             <li>Market</li>
             <li>Choose Us</li>

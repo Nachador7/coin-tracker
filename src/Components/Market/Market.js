@@ -13,7 +13,7 @@ const Market = () => {
 
     return (
         <div className='market w-100 pl6 pr6'>
-            <h2>Market</h2>
+            <h2 className='mb3'>Market Update</h2>
             <input
                 type='text'
                 placeholder='Search crypto...'
@@ -25,7 +25,7 @@ const Market = () => {
                    <table className='f4 w-100 mw-100 center mr4' cellSpacing='0'>
      <thead className='sticky-thead'>
         <tr className='stripe-dark'>
-            <th className='fw6 tl pa3' style={{ paddingLeft: '137px' }}>Coin</th>
+            <th className='fw6 tl pa3'>Coin</th>
             <th className='fw6 tl pa3'>Price</th>
             <th className='fw6 tl pa3'>24h Change</th>
             <th className='fw6 tl pa3'>Market Cap</th>
@@ -37,8 +37,8 @@ const Market = () => {
             .map((coin, index) => (
             <tr className={index % 2 === 0 ? 'stripe-dark' : ''} key={index}>
                 <td className='pa3 bb b--white'><img src={coin.image} alt={coin.name} className='h3 w3 dib mr4 v-mid' />{coin.name}</td>
-                <td className='pa3 bb b--white'>${coin.current_price}</td>
-                <td className='pa3 bb b--white'>{coin.price_change_percentage_24h.toFixed(2)}%</td>
+                <td className='pa3 bb b--white'>${coin.current_price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                <td className={`pa3 bb b--white ${coin.price_change_percentage_24h > 0 ? 'green' : 'red'}`}>{coin.price_change_percentage_24h.toFixed(2)}%</td>
                 <td className='pa3 bb b--white'>${coin.market_cap.toLocaleString()}</td>
             </tr>
         ))}
