@@ -2,7 +2,7 @@ import './Join-us.css';
 
 const JoinUs = () => {
     return (
-        <div className="join-us">
+        <section id='join' className="join-us">
             <div className="container">
                 <div className="join-us__container">
                 <div className="join-us__container__content">
@@ -14,7 +14,7 @@ const JoinUs = () => {
                 </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

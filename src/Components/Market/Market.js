@@ -12,7 +12,7 @@ const Market = () => {
 
 
     return (
-        <div className='market w-100 pl6 pr6'>
+        <section id='markt' className='market w-100 pl6 pr6'>
             <h2 className='mb3'>Market Update</h2>
             <input
                 type='text'
@@ -55,7 +55,7 @@ const Market = () => {
                     />
                 </div>
             )}
-        </div>
+        </section>
         
     );
 }

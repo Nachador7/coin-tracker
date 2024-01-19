@@ -7,7 +7,7 @@ const Home = () => {
     const data = Fetchdata();
 
     return (
-        <div className="Home">
+        <section id='hom' className="Home">
             <div className='home-container'>
             <h1 className='h1-container'>
               TRACK YOUR 
@@ -38,7 +38,7 @@ const Home = () => {
             )}
             </div>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -5,7 +5,7 @@ import hand from '../../hand.png'
 
 const ChooseUs = () => {
     return (
-        <div className="choose-us">
+        <section id="choose" className="choose-us">
             <div className='container'>
                 <div className='choose-container'>
                     <h2 className='why-container'>WHY <span className='gradient-font'>CHOOSE US</span></h2>
@@ -62,7 +62,7 @@ const ChooseUs = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 export default ChooseUs;

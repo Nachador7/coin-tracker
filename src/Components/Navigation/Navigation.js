@@ -10,10 +10,10 @@ const Navigation = () => {
                COINHARBOR
             </div>
         <ul className='mr6 f4'>
-            <li>Home</li>
-            <li>Market</li>
-            <li>Choose Us</li>
-            <li>Join</li>
+            <li><a href='#hom'>Home</a></li>
+            <li><a href='#markt'>Market</a></li>
+            <li><a href='#choose'>Choose Us</a></li>
+            <li><a href="#join">Join</a></li>
         </ul>
         <div className='social-media'>
             <FaTwitter className='twitter f3 mr3' />
