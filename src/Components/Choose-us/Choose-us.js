@@ -1,4 +1,5 @@
-import { IoIosThunderstorm } from 'react-icons/io';
+import { FaWallet, FaPencilAlt, FaMobileAlt, FaMoneyBillAlt, FaStackExchange } from 'react-icons/fa';
+import { TiClipboard } from 'react-icons/ti';
 
 import './Choose-us.css';
 import hand from '../../hand.png'
@@ -12,24 +13,24 @@ const ChooseUs = () => {
                     <div className='block-container'>
                         <div className='choose-container-content1'>
                             <div className='choose-box'>
-                                <i><IoIosThunderstorm /></i>
+                                <i><FaWallet /></i>
                                 <div className='choose-box-content'>
-                                    <h4>Fast</h4> 
-                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                    <h4>CONNECT YOUR WALLET</h4> 
+                                    <p>Use Trust Wallet, Metamask or to connect to the app.</p>
                                 </div>
                             </div>
                             <div className='choose-box'>
-                                <i><IoIosThunderstorm /></i>
+                                <i><FaPencilAlt/></i>
                                 <div className='choose-box-content'>
-                                    <h4>Fast</h4> 
-                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                    <h4>SELECT YOUR QUANTITY</h4> 
+                                    <p>Upload your crypto and set title,description and price.</p>
                                 </div>
                             </div>
                             <div className='choose-box'>
-                                <i><IoIosThunderstorm /></i>
+                                <i><TiClipboard /></i>
                                 <div className='choose-box-content'>
-                                    <h4>Fast</h4> 
-                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                    <h4>CONFIRM TRANSACTION</h4> 
+                                    <p>Earn by selling your crypto on our marketplace.</p>
                                 </div>
                             </div>
                         </div>
@@ -38,24 +39,24 @@ const ChooseUs = () => {
                         </div>
                         <div className='choose-container-content3'>
                         <div className='choose-box'>
-                                <i><IoIosThunderstorm /></i>
+                                <i><FaMobileAlt /></i>
                                 <div className='choose-box-content'>
-                                    <h4>Fast</h4> 
-                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                    <h4>RECIVE YOUR OWN NFTS</h4> 
+                                    <p>Invest all your crypto at one place on one platform.</p>
                                 </div>
                             </div>
                             <div className='choose-box'>
-                                <i><IoIosThunderstorm /></i>
+                                <i><FaMoneyBillAlt /></i>
                                 <div className='choose-box-content'>
-                                    <h4>Fast</h4> 
-                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                    <h4>TAKE A MARKET TO SELL</h4> 
+                                    <p>Discover, collect the right crypto collections to buy or sell.</p>
                                 </div>
                             </div>
                             <div className='choose-box'>
-                                <i><IoIosThunderstorm /></i>
+                                <i><FaStackExchange /></i>
                                 <div className='choose-box-content'>
-                                    <h4>Fast</h4> 
-                                    <p>Fastest way to buy and sell cryptocurrencies</p>
+                                    <h4>DRIVE YOUR COLLECTION</h4> 
+                                    <p>We make it easy to Discover,Invest and manage,</p>
                                 </div>
                             </div>
                         </div>
