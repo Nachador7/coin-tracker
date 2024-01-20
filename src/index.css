@@ -20,3 +20,14 @@ a {
   text-decoration: none;
   color: #f3f2f4;
 }
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ba04b7; /* Set the color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Set the color of the scrollbar track */
+}

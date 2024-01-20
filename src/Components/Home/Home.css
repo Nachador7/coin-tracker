@@ -7,6 +7,9 @@
     background-image: linear-gradient(0deg,#0f051d 30%,#130749 70%);
     padding: 7.5rem;
 }
+.home-container {
+    display: grid;
+}
 
 .h1-container {
     font-size: 5rem;
@@ -35,12 +38,42 @@
     cursor: pointer;
 }
 
+.button {
+    display: none;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 4rem; /* Add margin for spacing */
+    text-decoration: none; /* Remove default link underline */
+    color: #fff; /* Set text color to white */
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border: none; /* Remove border */
+    border-radius: 2rem; /* Optional: Add border-radius for rounded corners */
+    font-size: 2rem;
+    width: 100vw;
+}
+
+.chevrondown {
+    margin-left: 10px;
+}
+  
+
 @media (max-width: 768px) {
     .coin-container {
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
+    .Home {
+        padding: 2.5rem;
+    }
+    .button {
+        display: block;
+      }
 }
+
+ @media (max-width: 700px) {
+    
+
+ }
 
 @media (max-width: 480px) {
     .Home {
@@ -48,8 +81,11 @@
     }
 
     .h1-container {
-        font-size: 2rem; /* Adjusted font size for mobile devices */
-        padding: 1.5rem; /* Add padding for mobile devices */
+        font-size: 1.7rem !important; /* Adjusted font size for mobile devices */
+        
+    }
+    .coin-container {
+        display: none;
     }
 }
 
@@ -86,7 +122,7 @@
     margin: 0 25px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 877px) {
     .coinharbor {
         display: none;
     }

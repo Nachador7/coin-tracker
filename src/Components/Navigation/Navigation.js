@@ -9,6 +9,10 @@ const Navigation = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav className="navigation">
             <div className='f2 coinharbor'>
@@ -16,10 +20,10 @@ const Navigation = () => {
             </div>
             <FaBars className='burger' onClick={toggleMenu} />
             <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-                <li><a href='#home'>Home</a></li>
-                <li><a href='#market'>Market</a></li>
-                <li><a href='#choose'>Choose Us</a></li>
-                <li><a href="#join">Join</a></li>
+            <li><a href='#home' onClick={closeMenu}>Home</a></li>
+                <li><a href='#market' onClick={closeMenu}>Market</a></li>
+                <li><a href='#choose' onClick={closeMenu}>Choose Us</a></li>
+                <li><a href="#join" onClick={closeMenu}>Join</a></li>
             </ul>
             <div className='social-media'>
                 <a href="https://twitter.com/your_twitter_handle" target="_blank" rel="noopener noreferrer">

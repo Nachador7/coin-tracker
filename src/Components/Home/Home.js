@@ -4,6 +4,8 @@ import Fetchdata from '../Fetchdata/Fetchdata';
 import './Home.css'
 import Modal from 'react-modal';
 import parse from 'html-react-parser';
+import { Link } from 'react-scroll';
+import { FaChevronDown } from 'react-icons/fa';
 
 const Home = () => {
     const data = Fetchdata();
@@ -34,6 +36,9 @@ const Home = () => {
                         CYPTOCURRENCIES
                     </div> 
                 </h1>
+                <Link to="market" smooth={true} duration={500} className="button">
+                    CHECK PRICES  <FaChevronDown className='chevrondown'/>
+                 </Link>
                 <div className='coin-container'>
                     {data ? (
                         data.slice(0, 4).map((coin) => (
