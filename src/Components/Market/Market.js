@@ -27,7 +27,7 @@ const Market = () => {
     };
 
     return (
-        <section id='market' className='Market w-100 pl6 pr6'>
+        <section id='market' className='Market w-100'>
             <h2 className='mb3'>Market Update</h2>
             <input
                 type='text'
