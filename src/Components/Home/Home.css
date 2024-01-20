@@ -1,6 +1,6 @@
 .Home {
     width: auto;
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@
     border: none; /* Remove border */
     border-radius: 2rem; /* Optional: Add border-radius for rounded corners */
     font-size: 2rem;
-    width: 100vw;
+    
 }
 
 .chevrondown {
@@ -81,14 +81,18 @@
     }
 
     .h1-container {
-        font-size: 1.7rem !important; /* Adjusted font size for mobile devices */
+        font-size: 2rem !important;
         
     }
     .coin-container {
         display: none;
     }
 }
-
+@media (max-width:300px) {
+    .h1-container {
+        font-size:1.7rem !important;
+    }
+}
 
 .price-increase {
     color: green;
